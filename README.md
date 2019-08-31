@@ -28,7 +28,7 @@
 
 YourNovel使用了以下第三方包:
 
--gin
+- gin
 - go-redis/redis
 - colly
 - goquery 
