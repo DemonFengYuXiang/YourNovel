@@ -1,0 +1,20 @@
+{{ template "header" .}}
+
+{{ define "index_head" }}
+    <title>YourNovel-基于Go的开源简洁免费小说网站无广告无弹窗</title>
+{{ end }}
+
+<link rel="stylesheet" href="assets/css/web/index.css">
+<div class="container">
+    <div class="logo">
+        <img class="img-responsive center-block" src="assets/img/logo_home.png" alt="owllook">
+    </div>
+    <form action="/search" method="get" class="home_search center-block">
+        <div class="search center-block">
+            <input type="text" name="wd" class="form-control center-block" placeholder="请输入小说名">
+            <input class="btn btn-default" type="submit" value="YourNovel Search">
+        </div>
+    </form>
+</div>
+
+{{ template "footer" .}}

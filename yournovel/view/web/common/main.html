@@ -1,0 +1,46 @@
+{{ define "header" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    {{ if eq .head "index_head" }}
+  	    {{ template "index_head" .}}
+    {{ else if eq .head "search_head" }}
+  	    {{ template "search_head" .}}
+    {{ else if eq .head "chapter_head" }}
+    	{{ template "chapter_head" .}}
+    {{ else if eq .head "content_head" }}
+        {{ template "content_head" .}}
+    {{ end }}
+
+    <meta name="copyright" Content="本页版权归yournovel.cn所有 All Rights Reserved">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="assets/img/favicon.png"/>
+    <link rel="bookmark" href="assets/img/favicon.ico"/>
+    <link rel="stylesheet" href="assets/css/web/main.css">
+    <meta name="msvalidate.01" content="7F5A4F41F59B7840336A1530F6D3474E"/>
+
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan style='display:none' id='cnzz_stat_icon_1277982588'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1277982588%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+{{ end }}}
+{{ define "footer" }}
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+</html>
+{{ end }}}

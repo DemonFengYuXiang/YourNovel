@@ -1,0 +1,35 @@
+{{ template "header" .}}
+
+{{ define "content_head" }}
+    <title> {{ .content.Title }}-小说内容</title>
+    <link rel="stylesheet" href="assets/css/web/content.css">
+    <style>
+        #yun-tie-sdk-wrap {
+            background-color: #f8f3e9 !important;
+            margin-top: 20px;
+        }
+    </style>
+{{ end }}
+
+<nav class="navbar navbar-default nav-search">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container all-content">
+    <div class="title">
+        <h2 id="content_name">{{ .content.Title }}</h2>
+    </div>
+    <div class="show-content">
+        {{ .content.Content  }}
+    </div>
+</div>
+
+{{ template "footer" . }}
+<script src="assets/js/list.js"></script>
+<script src="static/novels/js/theme.js"></script>
+<script src="static/novels/js/content.js"></script>

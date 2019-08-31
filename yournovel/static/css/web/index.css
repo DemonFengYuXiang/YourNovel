@@ -1,0 +1,98 @@
+div.search {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+
+}
+
+div.logo {
+    padding-top: 10%;
+}
+
+form.home_search {
+    height: 120px;
+    margin-top: 55px;
+}
+
+div.search > .form-control {
+    width: 55%;
+    height: 40px;
+    line-height: 40px;
+}
+
+div.search > .btn-default {
+    width: 134px;
+    height: 35px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    -webkit-border-radius: 2px;
+    -webkit-user-select: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 30px 4px;
+    min-width: 54px;
+    padding: 0 12px;
+    text-align: center;
+}
+
+div.search > .btn-default:hover {
+    border: 1px solid #c8c8c8;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f3f3f3));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f4f4f4);
+    background-color: #ffffff;
+    color: #474747;
+}
+
+.login > .pull-right {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+}
+
+div.owl_search_ranking {
+    margin-top: 5%;
+    width: 55%;
+}
+
+div.owl_search_ranking span {
+    display: inline-block;
+    font-size: 12px;
+    padding: .3em .6em .3em;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        padding-top: 28% !important;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 45px;
+    }
+
+    div.owl_search_ranking {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1680px) {
+    .logo {
+        padding-top: 20% !important;
+    }
+}
