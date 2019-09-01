@@ -96,6 +96,9 @@ func InitConfig() {
 		"www.luoxia.com": {"link_prefix":"1", "chapter_selector": ".book-list", "content_selector": "p",},
 		"www.sbkk88.com": {"link_prefix":"0", "chapter_selector": ".leftList", "content_selector": "#f_article",},
 		"www.dxsxs.com": {"link_prefix":"0", "chapter_selector": "#yuedu", "content_selector": ".zw",},
+		"www.ouoou.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.77nt.com": {"link_prefix":"0", "chapter_selector": "dl", "content_selector": ".content",},
+		"www.biqubao.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
 	}
 
 	RuleConfig.IgnoreDomain = map[string]int {
@@ -127,6 +130,6 @@ func InitConfig() {
 		"www.yaojingweiba.com":1, "www.qb5200.com":1, "www.520tingshu.com":1, "www.567zw.com":1, "www.zjrxz.com":1,
 		"v.qq.com":1, "blog.sina.com.cn":1, "www.hackhome.com":1, "news.fznews.com.cn":1, "www.jingyu.com":1,
 		"news.so.com":1, "www.sodu3.com":1, "vipreader.qidian.com":1, "www.mozhua9.com":1, "www.iqiyi.com":1,
-		"xs.sogou.com":1, "www.xiashuwu.com":1, "www.97k.cc": 1,
+		"xs.sogou.com":1, "www.xiashuwu.com":1, "www.97k.cc": 1, "m.qidian.com":1,
 	}
 }
