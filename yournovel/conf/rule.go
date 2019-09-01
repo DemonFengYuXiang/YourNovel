@@ -16,7 +16,7 @@ func InitConfig() {
 
 	// link_prefix -1 代表取chapter_url 1 代表直接取URL 0 代表使用域名加拼接
 	RuleConfig.Rule = map[string]map[string]interface{}{
-		"www.biquge.info": {"link_prefix": "-1", "chapter_selector": "#list", "content_selector": "#content",},
+		"www.biquge.info": {"link_prefix": "-1", "chapter_selector": ".box_con", "content_selector": "#content",},
 		"www.biqugetv.com": {"link_prefix":"0", "chapter_selector": "#list", "content_selector": "#content",},
 		"www.paoshu8.com": {"link_prefix":"0", "chapter_selector": "#list", "content_selector": "#content",},
 		"www.xbiquge.la": {"link_prefix":"0", "chapter_selector": "#list", "content_selector": "#content",},
@@ -28,6 +28,30 @@ func InitConfig() {
 		"www.bbiquge.com": {"link_prefix":"-1", "chapter_selector": "#list", "content_selector": "#content",},
 		"www.xshengyan.com": {"link_prefix":"0", "chapter_selector": "#list", "content_selector": "#content",},
 		"www.biquge.tv": {"link_prefix":"-1", "chapter_selector": "#list", "content_selector": "#content",},
+		"www.biquwu.cc": {"link_prefix":"0", "chapter_selector": ".listmain", "content_selector": "#content",},
+		"www.qdtxt.cc": {"link_prefix":"0", "chapter_selector": ".dirconone", "content_selector": "#chapter_content",},
+		"www.quyuege.com": {"link_prefix":"0", "chapter_selector": ".mod-article-list", "content_selector": ".page-content",},
+		"www.biqugex.com": {"link_prefix":"0", "chapter_selector": ".listmain", "content_selector": "#content",},
+		"www.37zw.net": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.biquku.la": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.biquge.sh": {"link_prefix":"1", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.biquge.co": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.00ksw.org": {"link_prefix":"0", "chapter_selector": ".ml_list", "content_selector": "#articlecontent",},
+		"www.bqge.org": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.aikantxt.la": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"ww.biquzi.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.bqg.cc": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.biquge.jp": {"link_prefix":"0", "chapter_selector": "#list", "content_selector": "#content",},
+		"www.vipzw.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.biquge5200.com": {"link_prefix":"1", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.zanghaihuatxt.com": {"link_prefix":"0", "chapter_selector": ".listmain", "content_selector": "#content",},
+		"www.xiuxs.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.1biquge.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.xiaoshuowan.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.biqugela.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.biqu6.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
+		"www.zhuaji.org": {"link_prefix":"0", "chapter_selector": "dd", "content_selector": "#content",},
+		"www.sqsxs.com": {"link_prefix":"0", "chapter_selector": ".box_con", "content_selector": "#content",},
 	}
 
 	RuleConfig.IgnoreDomain = map[string]int {
@@ -59,6 +83,6 @@ func InitConfig() {
 		"www.yaojingweiba.com":1, "www.qb5200.com":1, "www.520tingshu.com":1, "www.567zw.com":1, "www.zjrxz.com":1,
 		"v.qq.com":1, "blog.sina.com.cn":1, "www.hackhome.com":1, "news.fznews.com.cn":1, "www.jingyu.com":1,
 		"news.so.com":1, "www.sodu3.com":1, "vipreader.qidian.com":1, "www.mozhua9.com":1, "www.iqiyi.com":1,
-		"xs.sogou.com":1, "www.xiashuwu.com":1,
+		"xs.sogou.com":1, "www.xiashuwu.com":1, "www.97k.cc": 1,
 	}
 }
