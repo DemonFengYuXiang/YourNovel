@@ -29,6 +29,18 @@
     </div>
 </div>
 
+<div class="pre_next">
+    <a href="/content?content_url={{ .content.PreChapter }}&content_title={{ .content_title }}&chapter_url={{ .chapter_url }}&novel_name={{ .novel_name }}"
+       class="btn btn-default">
+        上一章
+    </a>
+
+    <a href="/content?content_url={{ .content.NextChapter }}&content_title={{ .content_title }}&chapter_url={{ .chapter_url }}&novel_name={{ .novel_name }}"
+       class="btn btn-default">
+        下一章
+    </a>
+</div>
+
 {{ template "footer" . }}
 <script src="assets/js/list.js"></script>
 <script src="static/novels/js/theme.js"></script>

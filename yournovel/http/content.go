@@ -1,6 +1,7 @@
 package http
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"yournovel/yournovel/service/novel"
@@ -33,15 +34,18 @@ func novelContent(c *gin.Context) {
 
 	content, err := novel.SearchContentOfNovel(contentUrl)
 	if err != nil {
-		c.Redirect(http.StatusMovedPermanently, chapterUrl)
+		fmt.Println(content)
+		//c.Redirect(http.StatusMovedPermanently, chapterUrl)
 		return
 	}
-	content.Title = contentTitle
 	content.NovelName = novelName
 	content.ContentUrl = contentUrl
 
 	c.HTML(http.StatusOK, "content_index.html", gin.H{
 		"content": content,
+		"chapter_url": chapterUrl,
+		"novel_name": novelName,
+		"content_title": contentTitle,
 		"head": "content_head",
 	})
 }

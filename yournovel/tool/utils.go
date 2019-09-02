@@ -3,6 +3,7 @@ package tool
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"net/url"
 	"strconv"
 	"yournovel/yournovel/conf"
 )
@@ -26,6 +27,19 @@ func ErrorResponse(ctx *gin.Context, msg string, data interface{}) {
 		"msg": msg,
 		"data": data,
 	})
+}
+
+func UrlJoin(href, base string) string {
+	uri, err := url.Parse(href)
+	if err != nil {
+		return " "
+	}
+	baseUrl, err := url.Parse(base)
+	if err != nil {
+		return " "
+	}
+
+	return baseUrl.ResolveReference(uri).String()
 }
 
 

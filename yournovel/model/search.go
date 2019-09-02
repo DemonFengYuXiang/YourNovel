@@ -14,12 +14,14 @@ type NovelChapter struct {
 	OriginUrl  string        `json:"origin_url"`
 	Content    template.HTML `json:"content"`
 	LinkPrefix string        `json:"link_prefix"`
-	Domain     string 		 `json:"domain"`
+	Domain     string        `json:"domain"`
 }
 
 type NovelContent struct {
-	NovelName  string        `json:"novel_name"`
-	Title      string        `json:"title"`
-	ContentUrl string        `json:"content_url"`
-	Content    template.HTML `json:"content"`
+	NovelName   string        `json:"novel_name"`
+	Title       string        `json:"title"`
+	ContentUrl  string        `json:"content_url"`
+	Content     template.HTML `json:"content"`
+	PreChapter  string        `json:"pre_chapter"`
+	NextChapter string        `json:"next_chapter"`
 }
