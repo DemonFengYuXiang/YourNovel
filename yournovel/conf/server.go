@@ -2,7 +2,7 @@ package conf
 
 const (
 	Host = "0.0.0.0"
-	Port = 8080
+	Port = 8079
 	Scheme = "http://"
 
 	RedisAddr     = "ip:port"
